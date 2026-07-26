@@ -1,6 +1,6 @@
 {
   "name": "@lucid-softworks/http-server-node",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Node HTTP server adapters for standards-based Web handlers.",
   "keywords": [
     "http",
