@@ -6,7 +6,9 @@ Adapters between Node HTTP streams and Web `Request`/`Response` handlers.
 import { createServer } from "node:http";
 import { createNodeHttpListener } from "@lucid-softworks/http-server-node";
 
-createServer(createNodeHttpListener(handler)).listen(3000);
+const handler = () => new Response("ok");
+const server = createServer(createNodeHttpListener(handler));
+server.listen(3000);
 ```
 
 Request and response bodies stream without mandatory buffering. Handler errors
